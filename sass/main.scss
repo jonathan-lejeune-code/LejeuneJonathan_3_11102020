@@ -1,2 +1,11 @@
-@import"./var et mixin/mixin.scss" 
-@import"./var et mixin/variable.scss" 
+@import'./utils/_variables.scss';
+
+@import'./utils/_mixin.scss';
+
+@import'./base/-base.scss';
+
+@import'./layout/_header.scss';
+
+@import'./layout/_footer.scss';
+
+

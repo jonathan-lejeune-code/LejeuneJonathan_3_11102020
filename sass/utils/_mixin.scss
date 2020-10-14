@@ -1,0 +1,91 @@
+@mixin police1 {
+    font-family: "Shand", sans-serif;
+}
+@mixin police2 {
+    font-family: "Roboto", "trebuchet MS", sans-serif;
+}
+@mixin shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+@mixin titreh2 {
+    font-size: 40px;
+    margin: {
+        left: 30px;
+        bottom: 20px;
+        top: 20px;
+    }
+    font-weight: bold;
+}
+@mixin h2mobile {
+    font-size: 23px;
+    margin: {
+        left: 20px;
+        top: 30px;
+    }
+}
+@mixin titreh2tablette {
+    font-size: 32px;
+    margin: {
+        left: 25px;
+        bottom: 15px;
+        top: 15px;
+    }
+}
+@mixin imagesdesktop {
+    width: 105%;
+    height: 310px;
+    position: relative;
+    right: 5px;
+    bottom: 90px;
+}
+@mixin imagestablette {
+    width: 105%;
+    height: 200px;
+    bottom: 40px;
+}
+@mixin imagesmobile {
+    width: 105%;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+}
+@mixin h3mobile {
+    height: 70px;
+    padding-top: 10px;
+    bottom: 55px;
+}
+@mixin h3tablette {
+    height: 70px;
+    padding-top: 30px;
+    bottom: 60px;
+}
+@mixin boutonnouveau {
+    width: 120px;
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid $color-tertiary;
+    background: $color-tertiary;
+    color: rgb(2, 167, 2);
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 210%;
+    left: 70%;
+}
+@mixin bouton_nouveau_portable {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    bottom: 225%;
+    left: 68%;
+}
+@mixin boutonnouveautablette {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    left: 62%;
+    bottom: 190%;
+}
