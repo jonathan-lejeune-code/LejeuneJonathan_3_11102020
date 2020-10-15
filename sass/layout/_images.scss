@@ -1,0 +1,29 @@
+/*version ordi*/
+.img1{
+    @include imagesdesktop;
+    &--modifier {
+        @extend .img1;
+        height: 500px;
+        bottom: 200px;
+    }
+}
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+    .img1{
+        @include imagesmobile;
+        &--modifier {
+            @include imagesmobile;
+            height: 350px;
+            bottom: 125px;
+        }
+    }
+}
+@media (min-width: map-get($breakpoint, littletablette)) and (max-width: map-get($breakpoint, bigtablette)) {
+    .img1{
+        @include imagestablette;
+        &--modifier {
+            @include imagestablette;
+            height: 350px;
+            bottom: 130px;
+        }
+    }
+}

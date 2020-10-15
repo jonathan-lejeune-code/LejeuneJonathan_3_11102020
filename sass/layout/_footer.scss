@@ -57,7 +57,7 @@ footer ul {
         }
     }
 }
-@media (min-width: map-get($breakpoint, littletablette)) and (max-width: map-get($breakpoint, bigtablette)) {
+@media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
     footer {
         & h3 {
             font-size: 32px;
