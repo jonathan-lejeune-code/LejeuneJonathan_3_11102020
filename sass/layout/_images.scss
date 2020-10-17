@@ -17,7 +17,7 @@
         }
     }
 }
-@media (min-width: map-get($breakpoint, littletablette)) and (max-width: map-get($breakpoint, bigtablette)) {
+@media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
     .img1{
         @include imagestablette;
         &--modifier {
