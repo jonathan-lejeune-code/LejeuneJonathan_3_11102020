@@ -4,7 +4,7 @@
      margin-bottom: 50px;
      @include police2;
      & h2{
-         @include titreh2;
+         @include titleh2;
      }
      > ul{
          display: flex;
