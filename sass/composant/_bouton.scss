@@ -7,10 +7,17 @@
     margin-bottom: 50px;
     border-radius: 35px;
     color:$color-white;
-    background: linear-gradient($color-secondary,$color-primary);
+    background:mix($color-primary ,$color-secondary, 75%);
     font-size: 30px;
     text-decoration: none;
     line-height: 80px;
+    box-shadow: inset;
+    @include shadow(2px, 2px, 5px,black);
+
+    &:hover{
+        box-shadow: inset;
+        @include shadow(4px, 4px, 5px,black);
+    }
 
 }
 

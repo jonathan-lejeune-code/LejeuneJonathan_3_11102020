@@ -588,10 +588,17 @@ footer ul i {
   margin-bottom: 50px;
   border-radius: 35px;
   color: #fff;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: #ae5fdc;
   font-size: 30px;
   text-decoration: none;
   line-height: 80px;
+  box-shadow: inset;
+  box-shadow: 2px 2px 5px black;
+}
+
+.button:hover {
+  box-shadow: inset;
+  box-shadow: 4px 4px 5px black;
 }
 
 @media screen and (max-width: 767px) {
