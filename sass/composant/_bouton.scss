@@ -15,6 +15,7 @@
     @include shadow(2px, 2px, 5px,black);
 
     &:hover{
+        opacity: 0.8;
         box-shadow: inset;
         @include shadow(4px, 4px, 5px,black);
     }

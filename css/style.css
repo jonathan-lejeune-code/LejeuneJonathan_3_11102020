@@ -323,7 +323,7 @@ section h2 {
   width: 100%;
 }
 
-section .resto {
+section .img_resto {
   width: 35%;
   height: 320px;
   margin: auto;
@@ -597,6 +597,7 @@ footer ul i {
 }
 
 .button:hover {
+  opacity: 0.8;
   box-shadow: inset;
   box-shadow: 4px 4px 5px black;
 }
