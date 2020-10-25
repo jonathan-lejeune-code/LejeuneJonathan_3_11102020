@@ -116,7 +116,7 @@ header {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: null) and (max-width: null) {
   .logo {
     width: 200px;
     margin-top: 20px;
@@ -133,6 +133,27 @@ header {
   }
   .titre {
     font-size: 40px;
+  }
+}
+
+.img_menu {
+  width: 100%;
+  position: relative;
+  bottom: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .img_menu {
+    width: 110%;
+    top: 70px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img_menu {
+    position: relative;
+    top: 0px;
   }
 }
 
@@ -200,7 +221,7 @@ footer ul i {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: null) and (max-width: null) {
   footer h3 {
     font-size: 32px;
     margin-bottom: 40px;

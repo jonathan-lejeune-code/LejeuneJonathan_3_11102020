@@ -1,0 +1,21 @@
+
+.img_menu{
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+@media screen and (max-width:map-get($breakpoint , mobile )){
+    .img_menu{
+        width: 110%;
+        top: 70px;
+        right: 10px;
+    }
+}
+
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
+    .img_menu{
+        position: relative;
+        top: 0px;
+    }
+    }
