@@ -283,14 +283,14 @@ header {
   .repas .navbar {
     width: 95%;
   }
-  .repas .navbar .text {
+  .repas .navbar.text {
     margin: auto;
     margin-bottom: 25px;
   }
-  .repas .navbar .text_plat {
+  .repas .navbar.text_plat {
     margin-top: 10px;
   }
-  .repas .navbar .text p {
+  .repas .navbar.text p {
     font-size: 20px;
   }
 }
