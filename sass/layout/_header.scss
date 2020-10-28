@@ -44,7 +44,9 @@ header {
         margin-bottom: 30px;
         font-weight: bold;
     }
-    & p {
+
+
+.lip {
         width: 90%;
         font-size: 30px;
         margin-bottom: 20px;
@@ -76,12 +78,12 @@ header {
         & h1 {
             margin-bottom: 15px;
         }
-        & p {
+    }
+.lip {
             font-size: 15px;
             margin-bottom: 0;
         }
     }
-}
 @media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
     .logo {
         width: 200px;

@@ -110,7 +110,7 @@ header {
   font-weight: bold;
 }
 
-.titre p {
+.titre .lip {
   width: 90%;
   font-size: 30px;
   margin-bottom: 20px;
@@ -142,7 +142,7 @@ header {
   .titre h1 {
     margin-bottom: 15px;
   }
-  .titre p {
+  .lip {
     font-size: 15px;
     margin-bottom: 0;
   }
