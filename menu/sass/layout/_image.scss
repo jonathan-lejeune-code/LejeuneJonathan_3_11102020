@@ -5,12 +5,23 @@
     bottom: 300px;
 }
 
+.note{
+        bottom: 700px;
+        position: relative;
+    }
+
 @media screen and (max-width:map-get($breakpoint , mobile )){
     .img_menu{
         width: 110%;
         top: 70px;
         right: 10px;
+    
     }
+    .note{
+        top: -10px;
+        height: 400px;
+    }
+
 }
 
 @media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
@@ -18,4 +29,9 @@
         position: relative;
         top: 0px;
     }
+
+    .note{
+        top: -270px;
     }
+
+}

@@ -168,52 +168,6 @@ header {
   }
 }
 
-/*version ordi*/
-.img1, .img1--modifier {
-  width: 105%;
-  height: 310px;
-  position: relative;
-  right: 5px;
-  bottom: 90px;
-}
-
-.img1--modifier {
-  height: 500px;
-  bottom: 200px;
-}
-
-@media screen and (max-width: 767px) {
-  .img1, .img1--modifier {
-    width: 105%;
-    height: 200px;
-    position: relative;
-    bottom: 50px;
-  }
-  .img1--modifier {
-    width: 105%;
-    height: 200px;
-    position: relative;
-    bottom: 50px;
-    height: 350px;
-    bottom: 125px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .img1, .img1--modifier {
-    width: 105%;
-    height: 200px;
-    bottom: 40px;
-  }
-  .img1--modifier {
-    width: 105%;
-    height: 200px;
-    bottom: 40px;
-    height: 350px;
-    bottom: 130px;
-  }
-}
-
 /*version desktop*/
 nav {
   width: 100%;
@@ -525,6 +479,52 @@ section a {
     line-height: 30px;
     bottom: 225%;
     left: 68%;
+  }
+}
+
+/*version ordi*/
+.img1, .img1--modifier {
+  width: 105%;
+  height: 310px;
+  position: relative;
+  right: 5px;
+  bottom: 90px;
+}
+
+.img1--modifier {
+  height: 500px;
+  bottom: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .img1, .img1--modifier {
+    width: 105%;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+  }
+  .img1--modifier {
+    width: 105%;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+    height: 350px;
+    bottom: 125px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img1, .img1--modifier {
+    width: 105%;
+    height: 200px;
+    bottom: 40px;
+  }
+  .img1--modifier {
+    width: 105%;
+    height: 200px;
+    bottom: 40px;
+    height: 350px;
+    bottom: 130px;
   }
 }
 
