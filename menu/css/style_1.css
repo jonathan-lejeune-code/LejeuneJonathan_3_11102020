@@ -24,6 +24,48 @@ footer {
   vertical-align: baseline;
 }
 
+.button {
+  font-family: "Roboto", "trebuchet MS", sans-serif;
+  width: 200px;
+  height: 40px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  border-radius: 35px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: null) and (max-width: null) {
+  .button {
+    margin: auto;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+  }
+}
+
 header {
   overflow: hidden;
   height: 500px;
