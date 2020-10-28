@@ -337,7 +337,7 @@ section a {
   color: black;
 }
 
-.img {
+.img, .img-m {
   width: 100%;
   height: 130px;
   bottom: 110px;
@@ -345,6 +345,10 @@ section a {
   align-items: center;
   background-color: #fff;
   position: relative;
+}
+
+.img-m {
+  bottom: 300px;
 }
 
 .img_text {
@@ -358,7 +362,7 @@ section a {
   font-weight: bold;
 }
 
-.img .far {
+.img .far, .img-m .far {
   font-size: 40px;
   color: #353535;
   position: absolute;
@@ -366,14 +370,15 @@ section a {
   z-index: 1;
 }
 
-.img .fas {
+.img .fas, .img-m .fas {
   font-size: 40px;
   position: absolute;
   right: 15%;
   display: none;
 }
 
-.nouveau1 {
+.nouveau1,
+.nouveau2 {
   width: 120px;
   height: 40px;
   font-size: 25px;
@@ -406,23 +411,29 @@ section a {
   section figure p {
     font-size: 18px;
   }
-  .img {
+  .img, .img-m {
     height: 70px;
     padding-top: 30px;
     bottom: 60px;
+  }
+  .img-m {
+    height: 70px;
+    padding-top: 30px;
+    bottom: 60px;
+    bottom: 210px;
   }
   .img_text {
     padding-left: 20px;
     height: 70px;
     margin-bottom: 25px;
   }
-  .img .far,
-  .img .fas {
+  .img .far, .img-m .far, .img .fas, .img-m .fas {
     font-size: 30px;
     right: 10%;
     top: 20%;
   }
-  .nouveau1 {
+  .nouveau1,
+  .nouveau2 {
     width: 100px;
     height: 35px;
     font-size: 20px;
@@ -456,23 +467,29 @@ section a {
   section figure p {
     font-size: 15px;
   }
-  .img {
+  .img, .img-m {
     height: 70px;
     padding-top: 10px;
     bottom: 55px;
+  }
+  .img-m {
+    height: 70px;
+    padding-top: 10px;
+    bottom: 55px;
+    bottom: 210px;
   }
   .img_text {
     padding-left: 10px;
     height: 70px;
     margin-right: 20%;
   }
-  .img .far,
-  .img .fas {
+  .img .far, .img-m .far, .img .fas, .img-m .fas {
     font-size: 25px;
     right: 10%;
     top: 25%;
   }
-  .nouveau1 {
+  .nouveau1,
+  .nouveau2 {
     width: 80px;
     height: 30px;
     font-size: 15px;

@@ -47,6 +47,11 @@ section{
     align-items: center;
     background-color: $color-white;
     position: relative;
+
+    &-m {
+        @extend .img;
+        bottom: 300px;
+    }
 }
 
 .img{
@@ -79,7 +84,8 @@ section{
 
 }
 
-.nouveau1 {
+.nouveau1,
+.nouveau2 {
     @include butonnouveau;
 }
 
@@ -101,7 +107,12 @@ section{
         }
     }
     .img {
-        @include h3tablette;
+        @include h3tablet;
+
+        &-m{
+            @include h3tablet;
+            bottom:210px;
+        }
     }
     .img {
         &_text {
@@ -116,8 +127,9 @@ section{
             top: 20%;
         }
     }
-    .nouveau1{
-        @include butonnouveautablette;
+    .nouveau1,
+    .nouveau2{
+        @include butonnouveautablet;
     }
 
 }
@@ -146,6 +158,10 @@ section{
         }
         .img {
             @include h3mobile;
+            &-m{
+                @include h3mobile;
+                bottom: 210px;
+            }
             
         }
         .img {
@@ -161,7 +177,8 @@ section{
                 top: 25%;
             }
         }
-        .nouveau1{
+        .nouveau1,
+        .nouveau2{
             @include butonnouveauportable;
         }
         

@@ -21,10 +21,10 @@
 }
 @media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
     .img1{
-        @include imagestablette;
+        @include imagestablet;
         
         &--modifier {
-            @include imagestablette;
+            @include imagestablet;
             height: 350px;
             bottom: 130px;
         }
