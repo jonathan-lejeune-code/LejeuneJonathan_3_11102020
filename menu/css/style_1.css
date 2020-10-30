@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 img,
@@ -55,7 +56,7 @@ footer {
   }
 }
 
-@media (min-width: null) and (max-width: null) {
+@media (min-width: 768px) and (max-width: 991px) {
   .button {
     margin: auto;
     margin-bottom: 60px;
@@ -102,7 +103,7 @@ header {
   }
 }
 
-@media (min-width: null) and (max-width: null) {
+@media (min-width: 768px) and (max-width: 991px) {
   /*header*/
   .logo {
     width: 250px;
@@ -298,7 +299,7 @@ header {
   }
 }
 
-@media (min-width: null) and (max-width: null) {
+@media (min-width: 768px) and (max-width: 991px) {
   /*section*/
   .corps {
     top: 450px;
@@ -337,33 +338,38 @@ header {
   }
 }
 
-/*version ordi*/
+/*footer*/
 footer {
   background-color: #353535;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 1000px;
 }
 
 footer h3 {
   font-family: "Shand", sans-serif;
   color: #fff;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 30px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.enchante {
+  /*footer note enchantée*/
+  top: 1100px;
 }
 
 footer ul {
   display: flex;
   justify-content: space-between;
-  margin-left: 60px;
-  margin-bottom: 30px;
 }
 
 footer ul li {
   list-style-type: none;
-  margin-left: -40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   font-family: "Roboto", "trebuchet MS", sans-serif;
   width: 20%;
   font-size: 23px;
@@ -381,43 +387,52 @@ footer ul i {
 }
 
 @media screen and (max-width: 767px) {
+  /*footer*/
   footer {
-    width: 100%;
+    top: 1460px;
   }
   footer h3 {
     font-size: 20px;
+    margin-top: 10px;
+  }
+  .enchante {
+    top: 1560px;
   }
   footer ul {
     flex-direction: column;
-    margin-bottom: 20px;
   }
   footer ul li {
-    width: 90%;
+    width: 80%;
     font-size: 18px;
     margin-bottom: 10px;
   }
   footer ul i {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: null) and (max-width: null) {
+  /*footer*/
+  footer {
+    top: 1900px;
+  }
   footer h3 {
     font-size: 32px;
-    margin-bottom: 40px;
+  }
+  .enchante {
+    /*footer note enchantée*/
+    top: 2030px;
   }
   footer ul {
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-right: 0px;
   }
   footer ul li {
     width: 40%;
     font-size: 25px;
-    margin-bottom: 20px;
   }
   footer ul i {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style_1.css.map */

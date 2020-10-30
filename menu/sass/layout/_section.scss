@@ -142,7 +142,7 @@
         }
     }
 }
-@media (min-width: map-get($breakpoint, littletablette)) and (max-width: map-get($breakpoint, bigtablette)) {
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     /*section*/
     .corps {
         top: 450px;

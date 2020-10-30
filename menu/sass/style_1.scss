@@ -1,11 +1,11 @@
-@import"./utils/_variables.scss";
-@import"./utils/_mixin.scss";
+@import"./utils/_variables";
+@import"./utils/_mixin";
 
-@import"./base/_base.scss";
+@import"./base/_base";
 
-@import"./composant/_bouton.scss";
+@import"./composant/_bouton";
 
-@import"./layout/_header.scss";
-@import"./layout/_image.scss";
-@import"./layout/_section.scss";
-@import"./layout/_footer.scss";
+@import"./layout/_header";
+@import"./layout/_image";
+@import"./layout/_section";
+@import"./layout/footer";

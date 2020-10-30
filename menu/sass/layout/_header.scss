@@ -36,7 +36,7 @@ header{
         }
     }
 }
-@media (min-width: map-get($breakpoint, littletablet)) and (max-width: map-get($breakpoint, bigtablet)) {
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     /*header*/
     
     .logo {
