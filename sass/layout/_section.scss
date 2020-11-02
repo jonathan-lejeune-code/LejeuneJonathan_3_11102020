@@ -89,7 +89,9 @@ section{
     @include butonnouveau;
 }
 
-@media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
+/*section version tablet */ 
+
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     section {
         & h2 {
             font-size: 35px;
@@ -133,6 +135,8 @@ section{
     }
 
 }
+
+/*section version mobile*/ 
 
 @media screen and (max-width: map-get($breakpoint, mobile)) {
         section {

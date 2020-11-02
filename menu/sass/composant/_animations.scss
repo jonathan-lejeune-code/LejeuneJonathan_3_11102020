@@ -42,3 +42,69 @@
     }
 }
 
+/*animation menu corps */ 
+
+.navbar{
+    transform-origin: bottom;
+    animation: navbar 2000ms both 500ms;
+}
+
+@keyframes navbar{
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.anim{
+    animation: anim-liste both;
+    transform-origin: bottom;
+    animation-duration: 800ms;
+
+    &_2{
+        animation: anim-liste both;
+        transform-origin: bottom;
+        animation-duration: 1000ms;
+    }
+
+    &_3{
+        animation: anim-liste both;
+        transform-origin: bottom;
+        animation-duration: 1200ms;
+    }
+
+    &_4{
+        animation: anim-liste both;
+        transform-origin: bottom;
+        animation-duration: 1400ms;
+    }
+}
+
+@keyframes anim-liste{
+    0%{
+        transform: translateY(-700%);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateY(-10%);
+        opacity: 0.8;
+    }
+
+    90%{
+        transform: translateY(-5%);
+        opacity: 0.9;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

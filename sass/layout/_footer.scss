@@ -1,4 +1,4 @@
-/*version ordi*/
+/* footer version ordi*/
 footer {
     background-color: $color-grey-dark;
     width: 100%;
@@ -37,6 +37,9 @@ footer ul {
         margin-right: 10px;
     }
 }
+
+/*footer version mobile*/
+
 @media screen and (max-width: map-get($breakpoint, mobile)) {
     footer {
         width: 100%;
@@ -57,7 +60,10 @@ footer ul {
         }
     }
 }
-@media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
+
+/*footer version tablet*/ 
+
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     footer {
         & h3 {
             font-size: 32px;

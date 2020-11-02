@@ -1,3 +1,5 @@
+/*header desktop*/
+
 header{
     overflow: hidden;
     height: 500px;
@@ -24,8 +26,9 @@ header{
     }
 }
 
+/*header mobile */
 @media screen and (max-width: map-get($breakpoint, mobile)) {
-    /*header*/
+    
 
     .logo {
         width: 165px;
@@ -36,8 +39,9 @@ header{
         }
     }
 }
+/*header tablet*/
 @media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
-    /*header*/
+    
     
     .logo {
         width: 250px;

@@ -55,6 +55,8 @@
      }
  }
 
+ /*menu nav version mobile*/ 
+
  @media screen and (max-width: map-get($breakpoint, mobile)){
      nav{
          margin-bottom: 15px;
@@ -84,7 +86,9 @@
      }
  }
 
- @media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)){
+ /*menu nav ersion tablet*/ 
+
+ @media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)){
      nav{
          & h2{
              font-size: 35px;

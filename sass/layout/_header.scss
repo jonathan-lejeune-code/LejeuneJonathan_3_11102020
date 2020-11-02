@@ -1,3 +1,5 @@
+/*header version desktop*/
+
 header {
     overflow: hidden;
 }
@@ -53,6 +55,8 @@ header {
     }
 }
 
+/*header version mobile*/ 
+
 @media screen and (max-width: map-get($breakpoint, mobile)) {
     header {
         overflow: hidden;
@@ -84,7 +88,10 @@ header {
             margin-bottom: 0;
         }
     }
-@media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
+
+    /*header version tablet*/ 
+    
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     .logo {
         width: 200px;
         margin-top: 20px;

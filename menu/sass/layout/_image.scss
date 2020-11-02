@@ -1,4 +1,6 @@
 
+/*image destop*/
+
 .img_menu{
     width: 100%;
     position: relative;
@@ -9,6 +11,8 @@
         bottom: 700px;
         position: relative;
     }
+
+/*images mobil*/
 
 @media screen and (max-width:map-get($breakpoint , mobile )){
     .img_menu{
@@ -23,6 +27,8 @@
     }
 
 }
+
+/*image tablet*/ 
 
 @media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     .img_menu{

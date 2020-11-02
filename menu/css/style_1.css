@@ -25,6 +25,7 @@ footer {
   vertical-align: baseline;
 }
 
+/*bouton menu indiv desktop*/
 .button {
   font-family: "Roboto", "trebuchet MS", sans-serif;
   width: 200px;
@@ -44,6 +45,7 @@ footer {
   opacity: 0.8;
 }
 
+/*bouton menu indiv mobile*/
 @media screen and (max-width: 767px) {
   .button {
     width: 180px;
@@ -56,6 +58,7 @@ footer {
   }
 }
 
+/*bouton menu indiv tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   .button {
     margin: auto;
@@ -107,6 +110,68 @@ footer {
   }
 }
 
+/*animation menu corps */
+.navbar {
+  transform-origin: bottom;
+  animation: navbar 2000ms both 500ms;
+}
+
+@keyframes navbar {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim {
+  animation: anim-liste both;
+  transform-origin: bottom;
+  animation-duration: 800ms;
+}
+
+.anim_2 {
+  animation: anim-liste both;
+  transform-origin: bottom;
+  animation-duration: 1000ms;
+}
+
+.anim_3 {
+  animation: anim-liste both;
+  transform-origin: bottom;
+  animation-duration: 1200ms;
+}
+
+.anim_4 {
+  animation: anim-liste both;
+  transform-origin: bottom;
+  animation-duration: 1400ms;
+}
+
+@keyframes anim-liste {
+  0% {
+    transform: translateY(-700%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-10%);
+    opacity: 0.8;
+  }
+  90% {
+    transform: translateY(-5%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/*header desktop*/
 header {
   overflow: hidden;
   height: 500px;
@@ -133,8 +198,8 @@ header {
   margin: auto;
 }
 
+/*header mobile */
 @media screen and (max-width: 767px) {
-  /*header*/
   .logo {
     width: 165px;
   }
@@ -143,8 +208,8 @@ header {
   }
 }
 
+/*header tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
-  /*header*/
   .logo {
     width: 250px;
   }
@@ -153,6 +218,7 @@ header {
   }
 }
 
+/*image destop*/
 .img_menu {
   width: 100%;
   position: relative;
@@ -164,6 +230,7 @@ header {
   position: relative;
 }
 
+/*images mobil*/
 @media screen and (max-width: 767px) {
   .img_menu {
     width: 110%;
@@ -176,6 +243,7 @@ header {
   }
 }
 
+/*image tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   .img_menu {
     position: relative;
@@ -186,7 +254,7 @@ header {
   }
 }
 
-/*section*/
+/*section version desktop*/
 .corps {
   width: 100%;
   background-color: #f6f6f6;
@@ -284,8 +352,8 @@ header {
   width: 100%;
 }
 
+/*section vcersion mobile*/
 @media screen and (max-width: 767px) {
-  /*section*/
   .corps {
     border-radius: 30px 30px 0 0;
     top: 260px;
@@ -339,8 +407,8 @@ header {
   }
 }
 
+/*section version tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  /*section*/
   .corps {
     top: 450px;
     border-radius: 15px;
@@ -378,7 +446,7 @@ header {
   }
 }
 
-/*footer*/
+/*footer desktop*/
 footer {
   background-color: #353535;
   width: 100%;
@@ -397,7 +465,7 @@ footer h3 {
 }
 
 .enchante {
-  /*footer note enchantée*/
+  /*footer note enchantée desktop*/
   top: 1100px;
 }
 
@@ -426,8 +494,8 @@ footer ul i {
   margin-right: 10px;
 }
 
+/*footer mobile*/
 @media screen and (max-width: 767px) {
-  /*footer*/
   footer {
     top: 1460px;
   }
@@ -451,8 +519,8 @@ footer ul i {
   }
 }
 
+/*footer version tablet */
 @media (min-width: null) and (max-width: null) {
-  /*footer*/
   footer {
     top: 1900px;
   }
@@ -460,7 +528,7 @@ footer ul i {
     font-size: 32px;
   }
   .enchante {
-    /*footer note enchantée*/
+    /*footer note enchantée tablet*/
     top: 2030px;
   }
   footer ul {

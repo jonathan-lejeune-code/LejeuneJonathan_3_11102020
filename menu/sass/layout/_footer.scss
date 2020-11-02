@@ -1,4 +1,4 @@
-/*footer*/
+/*footer desktop*/
 footer {
     background-color: $color-grey-dark;
     width: 100%;
@@ -15,7 +15,7 @@ footer {
     }
 }
 .enchante {
-    /*footer note enchantée*/
+    /*footer note enchantée desktop*/
     top: 1100px;
 }
 footer ul {
@@ -39,8 +39,10 @@ footer ul {
         margin-right: 10px;
     }
 }
+
+/*footer mobile*/
 @media screen and (max-width: map-get($breakpoint, mobile)) {
-    /*footer*/
+    
     footer {
         top: 1460px;
         & h3 {
@@ -63,8 +65,10 @@ footer ul {
         }
     }
 }
+
+/*footer version tablet */
 @media (min-width: map-get($breakpoint, littletablette)) and (max-width: map-get($breakpoint, bigtablette)) {
-    /*footer*/
+    
     footer {
         top: 1900px;
         & h3 {
@@ -72,7 +76,7 @@ footer ul {
         }
     }
     .enchante {
-        /*footer note enchantée*/
+        /*footer note enchantée tablet*/
         top: 2030px;
     }
     footer ul {

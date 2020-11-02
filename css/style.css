@@ -1,3 +1,4 @@
+/*base page*/
 html,
 body,
 img,
@@ -24,7 +25,7 @@ footer {
   vertical-align: baseline;
 }
 
-/*version desktop*/
+/* bouton version desktop*/
 .button {
   width: 400px;
   height: 80px;
@@ -56,6 +57,7 @@ footer {
   }
 }
 
+/*header version desktop*/
 header {
   overflow: hidden;
 }
@@ -116,6 +118,7 @@ header {
   margin-bottom: 20px;
 }
 
+/*header version mobile*/
 @media screen and (max-width: 767px) {
   header {
     overflow: hidden;
@@ -148,6 +151,7 @@ header {
   }
 }
 
+/*header version tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   .logo {
     width: 200px;
@@ -235,6 +239,7 @@ nav > ul > li p {
   color: #9356dc;
 }
 
+/*menu nav version mobile*/
 @media screen and (max-width: 767px) {
   nav {
     margin-bottom: 15px;
@@ -264,6 +269,7 @@ nav > ul > li p {
   }
 }
 
+/*menu nav ersion tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   nav h2 {
     font-size: 35px;
@@ -393,6 +399,7 @@ section a {
   left: 70%;
 }
 
+/*section version tablet */
 @media (min-width: 768px) and (max-width: 991px) {
   section h2 {
     font-size: 35px;
@@ -443,6 +450,7 @@ section a {
   }
 }
 
+/*section version mobile*/
 @media screen and (max-width: 767px) {
   section {
     padding-bottom: 30px;
@@ -499,7 +507,7 @@ section a {
   }
 }
 
-/*version ordi*/
+/*version desktop*/
 .img1, .img1--modifier {
   width: 105%;
   height: 310px;
@@ -513,6 +521,7 @@ section a {
   bottom: 200px;
 }
 
+/*image version mobile*/
 @media screen and (max-width: 767px) {
   .img1, .img1--modifier {
     width: 105%;
@@ -530,6 +539,7 @@ section a {
   }
 }
 
+/*image version tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   .img1, .img1--modifier {
     width: 105%;
@@ -545,7 +555,7 @@ section a {
   }
 }
 
-/*version ordi*/
+/* footer version ordi*/
 footer {
   background-color: #353535;
   width: 100%;
@@ -588,6 +598,7 @@ footer ul i {
   margin-right: 10px;
 }
 
+/*footer version mobile*/
 @media screen and (max-width: 767px) {
   footer {
     width: 100%;
@@ -609,6 +620,7 @@ footer ul i {
   }
 }
 
+/*footer version tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   footer h3 {
     font-size: 32px;

@@ -1,4 +1,4 @@
-/*version ordi*/
+/*version desktop*/
 .img1{
     @include imagesdesktop;
     
@@ -8,6 +8,9 @@
         bottom: 200px;
     }
 }
+
+/*image version mobile*/ 
+
 @media screen and (max-width: map-get($breakpoint, mobile)) {
     .img1{
         @include imagesmobile;
@@ -19,7 +22,10 @@
         }
     }
 }
-@media (min-width: map-get($breakpoint, minitablette)) and (max-width: map-get($breakpoint, maxtablette)) {
+
+/*image version tablet*/ 
+
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     .img1{
         @include imagestablet;
         
