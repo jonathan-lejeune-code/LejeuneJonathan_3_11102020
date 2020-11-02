@@ -10,7 +10,7 @@
         background: -webkit-linear-gradient($color-primary, $color-secondary);
         -webkit-background-clip: text;
         color: transparent;
-        animation: animation-heart 600ms ease-in-out;
+        animation: animation-heart 800ms ease-in-out;
     }
 }
 
@@ -124,7 +124,7 @@ span {
         width: 60px;
         height: 100%;
         background-color: $color-tertiary;
-        animation-name: block;
+        animation-name: valide;
         animation-duration: 1000ms;
         & .valide_ok {
             display: flex;
