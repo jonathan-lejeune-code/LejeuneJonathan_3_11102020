@@ -59,7 +59,7 @@ footer {
 }
 
 /*bouton menu indiv tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1250px) {
   .button {
     margin: auto;
     margin-bottom: 60px;
@@ -171,6 +171,126 @@ footer {
   }
 }
 
+/*animation par ligne*/
+span {
+  display: none;
+}
+
+.clic:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.clic:hover .valide {
+  display: block;
+  width: 60px;
+  height: 100%;
+  background-color: #99e2d0;
+  animation-name: block;
+  animation-duration: 1000ms;
+}
+
+.clic:hover .valide .valide_ok {
+  display: flex;
+  justify-content: center;
+  line-height: 80px;
+  font-size: 22px;
+  animation: ok 600ms 100ms;
+  color: #fff;
+}
+
+.clic:hover.text_2 {
+  animation: prix 800ms forwards ease-in-out;
+  margin-right: 10px;
+}
+
+.clic:hover.text_2_couper {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
+  margin-right: 15px;
+}
+
+.clic:hover.text_plat {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: plat 800ms forwards ease-in-out;
+}
+
+.clic:hover.text_plat--modifier {
+  padding: 0;
+  margin-right: 0;
+}
+
+@keyframes valide {
+  0% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes ok {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes plat {
+  0% {
+    width: 110%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes prix {
+  0% {
+    width: 380px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+
+/*animation par ligne version mobile*/
+@media screen and (max-width: 767px) {
+  ._clic:hover.text_2 {
+    animation-name: prix-mobile;
+  }
+  @keyframes prix-mobile {
+    0% {
+      width: 300px;
+    }
+    100% {
+      width: 220px;
+    }
+  }
+}
+
+/*animation par ligne version tablet*/
+@media (min-width: 768px) and (max-width: 1250px) {
+  ._clic:hover.text_2 {
+    animation-name: prix-tablette;
+  }
+  @keyframes prix-tablette {
+    0% {
+      width: 650px;
+    }
+    100% {
+      width: 570px;
+    }
+  }
+}
+
 /*header desktop*/
 header {
   overflow: hidden;
@@ -209,7 +329,7 @@ header {
 }
 
 /*header tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1250px) {
   .logo {
     width: 250px;
   }
@@ -244,7 +364,7 @@ header {
 }
 
 /*image tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1250px) {
   .img_menu {
     position: relative;
     top: 0px;
@@ -408,7 +528,7 @@ header {
 }
 
 /*section version tablet */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1250px) {
   .corps {
     top: 450px;
     border-radius: 15px;

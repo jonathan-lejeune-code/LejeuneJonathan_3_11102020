@@ -108,3 +108,121 @@
         opacity: 1;
     }
 }
+
+/*animation par ligne*/
+
+span {
+    display: none;
+}
+.clic:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    & .valide {
+        display: block;
+        width: 60px;
+        height: 100%;
+        background-color: $color-tertiary;
+        animation-name: block;
+        animation-duration: 1000ms;
+        & .valide_ok {
+            display: flex;
+            justify-content: center;
+            line-height: 80px;
+            font-size: 22px;
+            animation: ok 600ms 100ms;
+            color: $color-white;
+        }
+    }
+    &.text_2 {
+        animation: prix 800ms forwards ease-in-out;
+        margin-right: 10px;
+        &_couper {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            animation-duration: 800ms;
+            animation-fill-mode: forwards;
+            transition-timing-function: ease-in-out;
+            margin-right: 15px;
+        }
+    }
+    &.text_plat {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: plat 800ms forwards ease-in-out;
+        &--modifier {
+            padding: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+@keyframes valide {
+    0% {
+        transform: translateX(100%);
+    }
+}
+@keyframes ok {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes plat {
+    0% {
+        width: 110%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes prix {
+    0% {
+        width: 380px;
+    }
+    100% {
+        width: 320px;
+    }
+}
+
+/*animation par ligne version mobile*/ 
+
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+    ._clic:hover {                                  
+        &.text_2 {
+            animation-name: prix-mobile;
+        }
+    }
+    @keyframes prix-mobile {
+        0% {
+            width: 300px;
+        }
+        100% {
+            width: 220px;
+        }
+    }
+}
+
+/*animation par ligne version tablet*/ 
+
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
+    ._clic:hover {                                
+        &.text_2 {
+            animation-name: prix-tablette;
+        }
+    }
+    @keyframes prix-tablette {
+        0% {
+            width: 650px;
+        }
+        100% {
+            width: 570px;
+        }
+    }
+}
