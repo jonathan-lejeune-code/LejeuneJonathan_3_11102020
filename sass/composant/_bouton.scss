@@ -7,7 +7,7 @@
     margin-bottom: 50px;
     border-radius: 35px;
     color:$color-white;
-    background:mix($color-primary ,$color-secondary, 75%);
+    background:mixer($color-primary ,$color-secondary);
     font-size: 30px;
     text-decoration: none;
     line-height: 80px;

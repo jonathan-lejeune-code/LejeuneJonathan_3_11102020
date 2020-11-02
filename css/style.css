@@ -32,7 +32,7 @@ footer {
   margin-bottom: 50px;
   border-radius: 35px;
   color: #fff;
-  background: #ae5fdc;
+  background: linear-gradient(#ff79da, #9356dc);
   font-size: 30px;
   text-decoration: none;
   line-height: 80px;

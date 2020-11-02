@@ -1,0 +1,44 @@
+/*animation coeur */
+
+.far:hover{
+    animation: heart_1 400ms both ease-in-out ;
+}
+
+.far{
+    &:hover ~ .fas {
+        display: block;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: animation-heart 600ms ease-in-out;
+    }
+}
+
+@keyframes heart_1{
+    100%{
+        opacity: 0%;
+    }
+    75%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    25%{
+        opacity: 0.75;
+    }
+    0%{
+        opacity: 1;
+    }
+}
+
+@keyframes animation-heart{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
