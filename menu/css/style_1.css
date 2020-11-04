@@ -80,7 +80,7 @@ footer {
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   color: transparent;
-  animation: animation-heart 600ms ease-in-out;
+  animation: animation-heart 800ms ease-in-out;
 }
 
 @keyframes heart_1 {
@@ -188,7 +188,7 @@ span {
   width: 60px;
   height: 100%;
   background-color: #99e2d0;
-  animation-name: block;
+  animation-name: valide;
   animation-duration: 1000ms;
 }
 
