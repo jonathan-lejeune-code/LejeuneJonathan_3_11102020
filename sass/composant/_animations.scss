@@ -4,8 +4,8 @@
 .far{
     &:hover ~ .fas {
         display: block;
-        background:linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
         color:transparent;
         animation: animation-heart 800ms ease-in-out;
     }
@@ -34,4 +34,51 @@
     to{
         opacity: 1;
     }
+}
+
+$spinner: $color-primary;
+$background:$color-secondary;
+$size: 100px;
+
+.spinner {
+  position:fixed;
+  top: 50%;
+  left: 47%;
+  width: $size;
+  height: $size;
+  animation: spinner 1s  linear infinite ;
+ 
+  
+ 
+  
+  span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .spinner-inner-1 {
+    background: linear-gradient(to right, rgba($spinner,0) 0%,rgba($spinner,0) 50%,$spinner 51%);
+  }
+  
+  .spinner-inner-2 {
+    background: linear-gradient(to top, rgba($background,0) 0%,$background 100%);
+  }
+  
+  .spinner-inner-3 {
+    $offset: $size * 0.1;
+    top: $offset;
+    left: $offset;
+    width: $size - ($offset * 2);
+    height: $size - ($offset * 2);
+    background: $background;
+  }
+}
+
+@keyframes spinner {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+  
+
 }
