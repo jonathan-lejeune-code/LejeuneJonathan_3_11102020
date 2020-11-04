@@ -4,8 +4,8 @@
 .far{
     &:hover ~ .fas {
         display: block;
-        background:-webkit-linear-gradient($color-primary, $color-secondary);
-        -webkit-background-clip: text;
+        background:linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
         color:transparent;
         animation: animation-heart 800ms ease-in-out;
     }
