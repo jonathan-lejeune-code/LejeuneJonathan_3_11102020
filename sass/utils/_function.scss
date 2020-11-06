@@ -1,2 +1,4 @@
-@function mixer($color-pri,$color-sec){ 
-@return linear-gradient($color-secondary, $color-primary)}
+@function mixer($color-pri,$color-sec) { 
+
+    @return linear-gradient($color-secondary, $color-primary)
+}
