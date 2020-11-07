@@ -172,7 +172,7 @@ footer {
 }
 
 /*animation par ligne*/
-span {
+.valide {
   display: none;
 }
 
@@ -223,9 +223,9 @@ span {
   animation: plat 800ms forwards ease-in-out;
 }
 
-.clic:hover.text_plat--modifier {
-  padding: 0;
-  margin-right: 0;
+.clic:hover.text_plat_prix {
+  padding: 0px;
+  margin-right: 0px;
 }
 
 @keyframes valide {
@@ -279,9 +279,9 @@ span {
 /*animation par ligne version tablet*/
 @media (min-width: 768px) and (max-width: 1250px) {
   ._clic:hover.text_2 {
-    animation-name: prix-tablette;
+    animation-name: prix-tablet;
   }
-  @keyframes prix-tablette {
+  @keyframes prix-tablet {
     0% {
       width: 650px;
     }
@@ -640,7 +640,7 @@ footer ul i {
 }
 
 /*footer version tablet */
-@media (min-width: null) and (max-width: null) {
+@media (min-width: 768px) and (max-width: 1250px) {
   footer {
     top: 1900px;
   }

@@ -67,7 +67,7 @@ footer ul {
 }
 
 /*footer version tablet */
-@media (min-width: map-get($breakpoint, littletablette)) and (max-width: map-get($breakpoint, bigtablette)) {
+@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     
     footer {
         top: 1900px;

@@ -111,7 +111,7 @@
 
 /*animation par ligne*/
 
-span {
+.valide {
     display: none;
 }
 .clic:hover {
@@ -153,9 +153,9 @@ span {
         white-space: nowrap;
         overflow: hidden;
         animation: plat 800ms forwards ease-in-out;
-        &--modifier {
-            padding: 0;
-            margin-right: 0;
+        &_prix{
+            padding: 0px;
+            margin-right: 0px;
         }
     }
 }
@@ -214,10 +214,10 @@ span {
 @media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     ._clic:hover {                                
         &.text_2 {
-            animation-name: prix-tablette;
+            animation-name: prix-tablet;
         }
     }
-    @keyframes prix-tablette {
+    @keyframes prix-tablet {
         0% {
             width: 650px;
         }
