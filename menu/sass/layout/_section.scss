@@ -72,7 +72,7 @@
     flex-direction: column;
     &_plat {
         font-weight: bold;
-        &--modifier {
+        &_prix {
             font-weight: bold;
             margin-right: 15px;
             padding-right: 10px;
@@ -133,7 +133,7 @@
                 &_plat {
                     font-size: 15px;
                     margin-top: 15px;
-                    &--modifier {
+                    &_prix {
                         font-size: 14px;
                         width: 5%;
                         margin-right: 15px;
@@ -176,7 +176,7 @@
         }
         & .navbar {
             width: 95%;
-            &.text {
+            & .text {
                 margin: auto;
                 margin-bottom: 25px;
                 &_plat {

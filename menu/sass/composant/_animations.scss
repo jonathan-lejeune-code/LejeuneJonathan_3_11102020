@@ -135,7 +135,7 @@
             color: $color-white;
         }
     }
-    &.text_2 {
+    & .text_2 {
         animation: prix 800ms forwards ease-in-out;
         margin-right: 10px;
         &_couper {
@@ -148,7 +148,7 @@
             margin-right: 15px;
         }
     }
-    &.text_plat {
+    & .text_plat {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -195,7 +195,7 @@
 
 @media screen and (max-width: map-get($breakpoint, mobile)) {
     ._clic:hover {                                  
-        &.text_2 {
+        & .text_2 {
             animation-name: prix-mobile;
         }
     }
@@ -213,7 +213,7 @@
 
 @media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
     ._clic:hover {                                
-        &.text_2 {
+        & .text_2 {
             animation-name: prix-tablet;
         }
     }

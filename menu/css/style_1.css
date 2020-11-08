@@ -201,12 +201,12 @@ footer {
   color: #fff;
 }
 
-.clic:hover.text_2 {
+.clic:hover .text_2 {
   animation: prix 800ms forwards ease-in-out;
   margin-right: 10px;
 }
 
-.clic:hover.text_2_couper {
+.clic:hover .text_2_couper {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -216,14 +216,14 @@ footer {
   margin-right: 15px;
 }
 
-.clic:hover.text_plat {
+.clic:hover .text_plat {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   animation: plat 800ms forwards ease-in-out;
 }
 
-.clic:hover.text_plat_prix {
+.clic:hover .text_plat_prix {
   padding: 0px;
   margin-right: 0px;
 }
@@ -263,7 +263,7 @@ footer {
 
 /*animation par ligne version mobile*/
 @media screen and (max-width: 767px) {
-  ._clic:hover.text_2 {
+  ._clic:hover .text_2 {
     animation-name: prix-mobile;
   }
   @keyframes prix-mobile {
@@ -278,7 +278,7 @@ footer {
 
 /*animation par ligne version tablet*/
 @media (min-width: 768px) and (max-width: 1250px) {
-  ._clic:hover.text_2 {
+  ._clic:hover .text_2 {
     animation-name: prix-tablet;
   }
   @keyframes prix-tablet {
@@ -456,7 +456,7 @@ header {
   font-weight: bold;
 }
 
-.text_plat--modifier {
+.text_plat_prix {
   font-weight: bold;
   margin-right: 15px;
   padding-right: 10px;
@@ -517,7 +517,7 @@ header {
     font-size: 15px;
     margin-top: 15px;
   }
-  .repas .navbar .text_plat--modifier {
+  .repas .navbar .text_plat_prix {
     font-size: 14px;
     width: 5%;
     margin-right: 15px;
@@ -554,14 +554,14 @@ header {
   .repas .navbar {
     width: 95%;
   }
-  .repas .navbar.text {
+  .repas .navbar .text {
     margin: auto;
     margin-bottom: 25px;
   }
-  .repas .navbar.text_plat {
+  .repas .navbar .text_plat {
     margin-top: 10px;
   }
-  .repas .navbar.text p {
+  .repas .navbar .text p {
     font-size: 20px;
   }
 }
