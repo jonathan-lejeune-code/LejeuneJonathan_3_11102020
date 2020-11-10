@@ -173,7 +173,21 @@ footer {
 
 /*animation par ligne*/
 .valide {
-  display: none;
+  opacity: 0;
+  width: 0px;
+  height: 100%;
+  background-color: #99e2d0;
+  transition: width 1s;
+}
+
+.valide_ok {
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+
+.clic {
+  display: flex;
+  padding-left: 0px;
 }
 
 .clic:hover {
@@ -186,10 +200,7 @@ footer {
 .clic:hover .valide {
   display: block;
   width: 60px;
-  height: 100%;
-  background-color: #99e2d0;
-  animation-name: valide;
-  animation-duration: 1000ms;
+  opacity: 1;
 }
 
 .clic:hover .valide .valide_ok {
@@ -197,12 +208,11 @@ footer {
   justify-content: center;
   line-height: 80px;
   font-size: 22px;
-  animation: ok 600ms 100ms;
   color: #fff;
+  transform: rotate(360deg);
 }
 
 .clic:hover .text_2 {
-  animation: prix 800ms forwards ease-in-out;
   margin-right: 10px;
 }
 
@@ -210,85 +220,20 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  animation-duration: 800ms;
-  animation-fill-mode: forwards;
-  transition-timing-function: ease-in-out;
   margin-right: 15px;
+  max-width: 170px;
 }
 
 .clic:hover .text_plat {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  animation: plat 800ms forwards ease-in-out;
 }
 
 .clic:hover .text_plat_prix {
   padding: 0px;
+  padding-right: 20px;
   margin-right: 0px;
-}
-
-@keyframes valide {
-  0% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes ok {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes plat {
-  0% {
-    width: 110%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-@keyframes prix {
-  0% {
-    width: 380px;
-  }
-  100% {
-    width: 320px;
-  }
-}
-
-/*animation par ligne version mobile*/
-@media screen and (max-width: 767px) {
-  ._clic:hover .text_2 {
-    animation-name: prix-mobile;
-  }
-  @keyframes prix-mobile {
-    0% {
-      width: 300px;
-    }
-    100% {
-      width: 220px;
-    }
-  }
-}
-
-/*animation par ligne version tablet*/
-@media (min-width: 768px) and (max-width: 1250px) {
-  ._clic:hover .text_2 {
-    animation-name: prix-tablet;
-  }
-  @keyframes prix-tablet {
-    0% {
-      width: 650px;
-    }
-    100% {
-      width: 570px;
-    }
-  }
 }
 
 /*header desktop*/
@@ -436,14 +381,18 @@ header {
   margin-bottom: 30px;
 }
 
-.repas li {
+.box {
+  flex: 1;
+}
+
+li {
   list-style-type: none;
   margin-bottom: 15px;
+  display: flex;
   width: 90%;
   height: 75px;
   box-shadow: 2px 2px 6px #353535;
   border-radius: 15px;
-  padding-left: 30px;
 }
 
 .text {
@@ -472,10 +421,10 @@ header {
   width: 100%;
 }
 
-/*section vcersion mobile*/
+/*section version mobile*/
 @media screen and (max-width: 767px) {
   .corps {
-    border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0px 0px;
     top: 260px;
   }
   .titre {
@@ -494,7 +443,7 @@ header {
   }
   .repas {
     width: 96%;
-    margin: 0;
+    margin: 0px;
     margin-bottom: 10px;
   }
   .repas h2 {
@@ -506,7 +455,7 @@ header {
   }
   .repas .navbar {
     width: 100%;
-    margin: 0;
+    margin: 0px;
   }
   .repas .navbar .text {
     width: 90%;
@@ -519,7 +468,7 @@ header {
   }
   .repas .navbar .text_plat_prix {
     font-size: 14px;
-    width: 5%;
+    width: 2%;
     margin-right: 15px;
   }
   .repas .navbar p {

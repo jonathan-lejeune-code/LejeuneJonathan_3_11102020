@@ -112,7 +112,22 @@
 /*animation par ligne*/
 
 .valide {
-    display: none;
+    opacity: 0;
+    width: 0px;
+    height: 100%;
+    background-color: $color-tertiary;
+    transition: width 1s;
+}
+
+.valide_ok{
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.clic{
+    display: flex;
+    padding-left: 0px;
+
 }
 .clic:hover {
     display: flex;
@@ -122,107 +137,41 @@
     & .valide {
         display: block;
         width: 60px;
-        height: 100%;
-        background-color: $color-tertiary;
-        animation-name: valide;
-        animation-duration: 1000ms;
+        opacity: 1;
+
         & .valide_ok {
             display: flex;
             justify-content: center;
             line-height: 80px;
             font-size: 22px;
-            animation: ok 600ms 100ms;
             color: $color-white;
+            transform: rotate(360deg);
+
         }
     }
     & .text_2 {
-        animation: prix 800ms forwards ease-in-out;
+       
         margin-right: 10px;
         &_couper {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            animation-duration: 800ms;
-            animation-fill-mode: forwards;
-            transition-timing-function: ease-in-out;
             margin-right: 15px;
+            max-width: 170px;
         }
     }
     & .text_plat {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        animation: plat 800ms forwards ease-in-out;
         &_prix{
             padding: 0px;
+            padding-right: 20px;
             margin-right: 0px;
         }
     }
 }
 
-@keyframes valide {
-    0% {
-        transform: translateX(100%);
-    }
-}
-@keyframes ok {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes plat {
-    0% {
-        width: 110%;
-    }
-    100% {
-        width: 75%;
-    }
-}
 
-@keyframes prix {
-    0% {
-        width: 380px;
-    }
-    100% {
-        width: 320px;
-    }
-}
 
-/*animation par ligne version mobile*/ 
 
-@media screen and (max-width: map-get($breakpoint, mobile)) {
-    ._clic:hover {                                  
-        & .text_2 {
-            animation-name: prix-mobile;
-        }
-    }
-    @keyframes prix-mobile {
-        0% {
-            width: 300px;
-        }
-        100% {
-            width: 220px;
-        }
-    }
-}
-
-/*animation par ligne version tablet*/ 
-
-@media (min-width: map-get($breakpoint, minitablet)) and (max-width: map-get($breakpoint, maxtablet)) {
-    ._clic:hover {                                
-        & .text_2 {
-            animation-name: prix-tablet;
-        }
-    }
-    @keyframes prix-tablet {
-        0% {
-            width: 650px;
-        }
-        100% {
-            width: 570px;
-        }
-    }
-}

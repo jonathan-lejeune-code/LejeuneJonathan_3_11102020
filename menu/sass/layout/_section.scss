@@ -56,16 +56,22 @@
         overflow: hidden;
         margin-bottom: 30px;
     }
-    & li {
-        list-style-type: none;
-        margin-bottom: 15px;
-        width: 90%;
-        height: 75px;
-        @include shadow(2px, 2px, 6px, $color-grey-dark);
-        border-radius: 15px;
-        padding-left: 30px;
-    }
 }
+
+.box{
+    flex: 1;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    display: flex;
+    width: 90%;
+    height: 75px;
+    @include shadow(2px, 2px, 6px, $color-grey-dark);
+    border-radius: 15px;
+}
+
 .text {
     height: 65px;
     display: flex;
@@ -88,12 +94,12 @@
     width: 100%;
 }
 
-/*section vcersion mobile*/ 
+/*section version mobile*/ 
 
 @media screen and (max-width: map-get($breakpoint, mobile)) {
    
     .corps {
-        border-radius: 30px 30px 0 0;
+        border-radius: 30px 30px 0px 0px;
         top: 260px;
     }
     .titre {
@@ -105,14 +111,14 @@
             width: 250px;
         }
         & .far,
-        .fas {
+         .fas {
             font-size: 22px;
             right: 11%;
         }
     }
     .repas {
         width: 96%;
-        margin: 0;
+        margin: 0px;
         margin-bottom: 10px;
         & h2 {
             font-size: 18px;
@@ -125,7 +131,7 @@
         }
         & .navbar {
             width: 100%;
-            margin: 0;
+            margin: 0px;
             & .text {
                 width: 90%;
                 margin: 10px 0px 15px 15px;
@@ -135,7 +141,7 @@
                     margin-top: 15px;
                     &_prix {
                         font-size: 14px;
-                        width: 5%;
+                        width: 2%;
                         margin-right: 15px;
                     }
                 }
