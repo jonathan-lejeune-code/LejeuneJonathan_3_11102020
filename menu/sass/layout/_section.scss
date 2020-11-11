@@ -64,6 +64,7 @@
 
 li {
     list-style-type: none;
+    margin-left:20px;
     margin-bottom: 15px;
     display: flex;
     width: 90%;
@@ -78,10 +79,11 @@ li {
     flex-direction: column;
     &_plat {
         font-weight: bold;
+        margin-left: 10px;
         &_prix {
             font-weight: bold;
             margin-right: 15px;
-            padding-right: 10px;
+            padding-right: 20px;
         }
     }
     & p {
@@ -92,6 +94,7 @@ li {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: 10px;
 }
 
 /*section version mobile*/ 

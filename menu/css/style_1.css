@@ -221,7 +221,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   margin-right: 15px;
-  max-width: 170px;
+  max-width: 130px;
 }
 
 .clic:hover .text_plat {
@@ -387,6 +387,7 @@ header {
 
 li {
   list-style-type: none;
+  margin-left: 20px;
   margin-bottom: 15px;
   display: flex;
   width: 90%;
@@ -403,12 +404,13 @@ li {
 
 .text_plat {
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .text_plat_prix {
   font-weight: bold;
   margin-right: 15px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .text p {
@@ -419,6 +421,7 @@ li {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-left: 10px;
 }
 
 /*section version mobile*/
