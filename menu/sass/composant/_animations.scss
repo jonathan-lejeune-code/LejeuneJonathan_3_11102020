@@ -138,8 +138,15 @@
         display: block;
         width: 60px;
         opacity: 1;
+    }
+}
 
-        & .valide_ok {
+.clic:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    & .valide_ok {
             display: flex;
             justify-content: center;
             line-height: 80px;
@@ -149,8 +156,12 @@
 
         }
     }
+.clic:hover {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
     & .text_2 {
-       
         margin-right: 10px;
         &_couper {
             text-overflow: ellipsis;
@@ -160,6 +171,13 @@
             max-width: 130px;
         }
     }
+}
+
+.clic:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
     & .text_plat {
         text-overflow: ellipsis;
         white-space: nowrap;

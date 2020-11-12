@@ -203,13 +203,27 @@ footer {
   opacity: 1;
 }
 
-.clic:hover .valide .valide_ok {
+.clic:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.clic:hover .valide_ok {
   display: flex;
   justify-content: center;
   line-height: 80px;
   font-size: 22px;
   color: #fff;
   transform: rotate(360deg);
+}
+
+.clic:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .clic:hover .text_2 {
@@ -222,6 +236,13 @@ footer {
   overflow: hidden;
   margin-right: 15px;
   max-width: 130px;
+}
+
+.clic:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .clic:hover .text_plat {
