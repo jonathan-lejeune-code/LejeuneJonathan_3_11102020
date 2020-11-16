@@ -363,7 +363,7 @@ header {
 .titre h1 {
   width: 100%;
   height: 40px;
-  font-family: "Shand", sans-serif;
+  font-family: "shrikhand", sans-serif;
   font-weight: bold;
   font-size: 35px;
 }
@@ -550,7 +550,7 @@ footer {
 }
 
 footer h3 {
-  font-family: "Shand", sans-serif;
+  font-family: "shrikhand", sans-serif;
   color: #fff;
   font-size: 30px;
   margin-left: 20px;
