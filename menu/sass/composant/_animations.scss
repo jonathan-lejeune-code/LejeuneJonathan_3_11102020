@@ -116,7 +116,7 @@
     width: 0px;
     height: 100%;
     background-color: $color-tertiary;
-    transition: width 1s;
+    transition: width 1s ;
     
 }
 
@@ -124,6 +124,7 @@
     transform: rotate(0deg);
     transition: transform 1s;
 }
+
 
 
 
@@ -141,6 +142,7 @@
         display: block;
         width: 60px;
         opacity: 1;
+        
     }
 }
 
@@ -171,7 +173,8 @@
             white-space: nowrap;
             overflow: hidden;
             margin-right: 15px;
-            max-width: 155px;
+            max-width: 160px;
+            
             
         }
     }
