@@ -39,10 +39,12 @@ footer {
   background: linear-gradient(#ff79da, #9356dc);
   text-decoration: none;
   text-align: center;
+  box-shadow: 2px 2px 5px black;
 }
 
 .button:hover {
   opacity: 0.8;
+  box-shadow: 2px 2px 5px black;
 }
 
 /*bouton menu indiv mobile*/
@@ -565,20 +567,27 @@ footer h3 {
 footer ul {
   display: flex;
   justify-content: space-between;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 footer ul li {
   list-style-type: none;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-left: -40px;
   font-family: "Roboto", "trebuchet MS", sans-serif;
   width: 20%;
+  height: auto;
   font-size: 23px;
 }
 
 footer ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer ul i {
@@ -601,14 +610,15 @@ footer ul i {
   }
   footer ul {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   footer ul li {
-    width: 80%;
+    width: 90%;
     font-size: 18px;
     margin-bottom: 10px;
   }
   footer ul i {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 

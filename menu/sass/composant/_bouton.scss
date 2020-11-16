@@ -13,8 +13,10 @@
     background: linear-gradient($color-secondary, $color-primary);
     text-decoration: none;
     text-align: center;
+    @include shadow(2px, 2px, 5px,black);
     &:hover{
         opacity: 0.8;
+        @include shadow(2px, 2px, 5px,black);
     }
 }
 

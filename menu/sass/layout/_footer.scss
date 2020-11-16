@@ -2,6 +2,7 @@
 footer {
     background-color: $color-grey-dark;
     width: 100%;
+    
     padding-top: 15px;
     padding-bottom: 15px;
     position: absolute;
@@ -21,18 +22,24 @@ footer {
 footer ul {
     display: flex;
     justify-content: space-between;
+    margin-left: 60px;
+    margin-bottom: 30px;
     & li {
         list-style-type: none;
-        margin-left: 20px;
-        margin-bottom: 20px;
+        margin-left: -40px;
         @include police2;
         width: 20%;
+        height: auto;
         font-size: 23px;
         & a {
             text-decoration: none;
             color: $color-white;
         }
     }
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
     & i {
         width: 12px;
         font-size: 18px;
@@ -55,13 +62,14 @@ footer ul {
     }
     footer ul {
         flex-direction: column;
+        margin-bottom: 20px;
         & li {
-            width: 80%;
+            width: 90%;
             font-size: 18px;
             margin-bottom: 10px;
         }
         & i {
-            font-size: 15px;
+            font-size: 16px;
         }
     }
 }
