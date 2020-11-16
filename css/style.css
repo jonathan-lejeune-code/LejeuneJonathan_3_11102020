@@ -228,7 +228,7 @@ header {
   background-color: #eaeaea;
   border: 1px solid #eaeaea;
   margin-left: 10px;
-  font-family: "Shand", sans-serif;
+  font-family: "shrikhand", sans-serif;
 }
 
 .titre {
@@ -701,7 +701,7 @@ footer {
 }
 
 footer h3 {
-  font-family: "Shand", sans-serif;
+  font-family: "shrikhand", sans-serif;
   color: #fff;
   font-size: 25px;
   margin-top: 20px;
