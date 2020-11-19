@@ -223,11 +223,12 @@ header {
 }
 
 .recherche .search {
-  width: 30%;
+  width: 25%;
   font-size: 28px;
   background-color: #eaeaea;
   border: 1px solid #eaeaea;
   margin-left: 10px;
+  text-align: center;
   font-family: "shrikhand", sans-serif;
 }
 

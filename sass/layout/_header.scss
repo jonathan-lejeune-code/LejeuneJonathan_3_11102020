@@ -22,11 +22,12 @@ header {
         font-size: 30px;
     }
     & .search {
-        width: 30%;
+        width: 25%;
         font-size: 28px;
         background-color: $color-grey;
         border: 1px solid $color-grey;
         margin-left: 10px;
+        text-align: center;
         @include police1;
     }
 }
