@@ -21,6 +21,12 @@ header{
         margin-left: 20px;
     }
 
+i:hover{
+    color: $color-primary;
+    border: 3px solid $color-tertiary;
+    border-radius: 50px;
+}
+
     & img { 
         margin: auto;
     }

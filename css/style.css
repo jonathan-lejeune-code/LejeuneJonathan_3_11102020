@@ -223,7 +223,7 @@ header {
 }
 
 .recherche .search {
-  width: 19%;
+  width: 30%;
   font-size: 28px;
   background-color: #eaeaea;
   border: 1px solid #eaeaea;
@@ -301,7 +301,7 @@ header {
     font-size: 20px;
   }
   .recherche .search {
-    width: 180px;
+    width: 190px;
     font-size: 20px;
   }
   .titre {

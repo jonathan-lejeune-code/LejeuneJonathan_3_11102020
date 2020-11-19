@@ -282,6 +282,12 @@ header {
   margin-left: 20px;
 }
 
+.banner i:hover {
+  color: #9356dc;
+  border: 3px solid #99e2d0;
+  border-radius: 50px;
+}
+
 .banner img {
   margin: auto;
 }
